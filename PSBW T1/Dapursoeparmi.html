@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DAPSOE — Pilihan makanan kita </title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<style>  
+  :root{
+    --brand: #1b4332;   
+    --accent: #bc6c25;  
+  }
+
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #fefae0; 
+    color: #333;}
+  .hero {
+    background: linear-gradient(90deg, rgba(27,67,50,.95), rgba(188,108,37,.9)); 
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;}
+  .brand {
+    color: var(--brand); 
+    font-weight: 700;}
+  .product-card img {
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 8px;}
+  footer {
+    background: var(--brand);
+    color: #fff;
+    padding: 20px;
+    text-align: center;}
+  .badge-brand {
+    background: var(--brand); 
+    color: #fff;}
+  .btn-brand {
+    background-color: var(--brand);
+    color: #fff;
+    border: none;}
+  .btn-brand:hover {
+    background-color: #2d6a4f;}
+  .btn-accent {
+    background-color: var(--accent);
+    color: #fff;
+    border: none;}
+  .btn-accent:hover {
+    background-color: #a0521d;}
+  .menu-img {
+      width: 100%;
+      height: 200px;      
+      object-fit: cover;  
+      border-radius: 10px;}    
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="desa 1.jpg" alt="logo dapsoe" height="50">
+      <span class="fw-bold">DAPUR SOEPARMI</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#Produk">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Keranjang">Keranjang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Histori">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero py-5">
+  <div class="container d-md-flex align-items-center gap-5">
+    <div class="flex-grow-1">
+      <h1 class="display-5">DAPUR SOEPARMI</h1>
+      <p class="lead">Dapur makan masakan ibu, pilihan lokal untuk kita</p>
+      <p>
+        <a href="#produk" class="btn btn-dark me-2">Lihat Produk</a>
+        <a href="#kontak" class="btn btn-outline-dark">Hubungi Kami</a>
+	<a href="#pesanan" class="btn btn-outline-dark">Pesananan</a>
+      </p>
+    </div>
+    <div class="text-center d-none d-md-block" style="width:320px">
+      <img src="desa 1.jpg" alt="Histori dapsoe" class="img-fluid rounded shadow-sm">
+    </div>
+  </div>
+</header>
+
+<main class="container py-5">
+  <section id="produk" class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="h4 mb-0">Katalog keluarga</h2>
+      <span class="badge badge-brand py-2 px-3">Selengkapnya</span>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="nasi liwet.jpeg" class="card-img-top" alt="Betta 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nasi liwet</h5>
+            <p class="card-text">Nasi liwet khas sunda, yang gurih dapat dinikmati 2-3 orang</p>
+            <p><strong>Harga:</strong> Rp 34.000</p>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetail" data-title="Nasi liwet" data-img="nasi liwet.jpeg" data-desc="Nasi gurih khas Sunda yang dimasak dengan santan, serai, daun salam, dan bawang merah,
+                menghasilkan aroma harum serta rasa yang lembut dan gurih.">Detail</button>
+              <button class="btn btn-sm btn-outline-success">Beli</button>
+              <button class="btn btn-sm btn-outline-success">Keranjang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="Tumpeng nasi putih.jpeg" class="card-img-top" alt="Betta 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nasi tumpeng</h5>
+            <p class="card-text">Nasi tumpeng gurih dan nikmat dapat di nikmati 5-10 orang</p>
+            <p><strong>Harga:</strong> Rp 126.000</p>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetail" data-title="Nasi tumpeng" data-img="tumpeng nasi putih.jpeg" data-desc="Nasi tumpeng ini berisi nasi putih gurih yang pulen, ditemani ayam goreng renyah berbumbu, telur dadar iris yang gurih sederhana, serta serundeng kelapa yang manis-gurih dan wangi. Ada juga sambal merah pedas yang bikin selera makin naik, ditemani lalapan segar seperti selada, kol, dan timun biar rasa jadi seimbang. Perpaduannya bikin makanannya lengkap banget — ada gurih, pedas, manis, sampai segar, cocok disantap rame-rame di acara spesial.">Detail</button>
+              <button class="btn btn-sm btn-outline-success">Beli</button>
+              <button class="btn btn-sm btn-outline-success">Keranjang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="nasi kotak.jpeg" class="card-img-top" alt="Betta 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nasi kotak</h5>
+            <p class="card-text">Nasi kotak, dengan minimal pemesanan 10 porsi (harga yang tertera adalah harga per 1 porsi)</p>
+            <p><strong>Harga:</strong> Rp 17.000</p>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetail" data-title="Cupang Halfmoon - Electric Blue" data-img="nasi kotak.jpeg" data-desc="Nasi kotak dengan isian ayam, sambel goreng kentang, kerupuk mie kecap, udang saos, telur, dan capcay">Detail</button>
+              <button class="btn btn-sm btn-outline-success">Beli</button>
+              <button class="btn btn-sm btn-outline-success">Keranjang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="mb-5">
+    <h2 class="h5">Menu jomblo</h2>
+    <div class="row g-2">
+      <div class="col-6 col-md-3"><img src="nasi kenduri 🥵🤰🏻.jpeg" class="img-fluid rounded" alt=""></div>
+      <div class="col-6 col-md-3"><img src="ayam kremes.jpeg" class="img-fluid rounded" alt=""></div>
+      <div class="col-6 col-md-3"><img src="Nasi goreng.jpeg" class="img-fluid rounded" alt=""></div>
+    </div>
+  </section>
+
+  <section id="tentang" class="mb-5">
+    <h2 class="h5">Tentang Dapur soeparmi </h2>
+    <p>Dapur Soeparmi merupakan dapur hak milik yang telah ada sejak tahun 2010 hingga kini generasi ke 3, 
+      pertama kali ada di surabaya, Gubeng. Dengan alamat JL. universitas airlangga NO 2/c. Spesial makanan rumahan yang di masak oleh ibu, masakan lokal yang memiliki ciri khas. kami spesalis olahan nasi santan khas indonesia yang nikmat, sehat, dan bergizi, dengan harga yang terjangkau</p>
+  </section>
+
+  <section id="kontak" class="mb-5">
+    <h2 class="h5">Hubungi Kami</h2>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label class="form-label">Nama</label>
+        <input type="text" class="form-control" required>
+        <div class="invalid-feedback">Nama wajib diisi.</div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email / No Telpon</label>
+        <input type="text" class="form-control" required>
+        <div class="invalid-feedback">Masukan no/email dengan benar.</div>
+      </div>
+      <div class="col-12">
+        <label class="form-label">Pesan</label>
+        <textarea class="form-control" rows="4" required></textarea>
+        <div class="invalid-feedback">Pesan.</div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary">Kirim Pesan</button>
+      </div>
+    </form>
+  </section>
+<section id="orders" style="padding:20px; max-width:600px; margin:auto; font-family:sans-serif;">
+  <h2 style="font-size:20px; margin-bottom:15px; color:#1b4332;">Status Pesanan</h2>
+  
+  <div style="border:1px solid #ccc; border-radius:10px; padding:10px; margin-bottom:10px;">
+    <h3 style="font-size:16px; margin:0; color:#bc6c25;">Dine-in</h3>
+    <p style="font-size:14px; margin:5px 0 0;">Pesanan akan disajikan di meja Anda.</p>
+  </div>
+
+  <div style="border:1px solid #ccc; border-radius:10px; padding:10px; margin-bottom:10px;">
+    <h3 style="font-size:16px; margin:0; color:#bc6c25;">Takeaway</h3>
+    <p style="font-size:14px; margin:5px 0 0;">Pesanan akan disiapkan untuk dibawa pulang.</p>
+  </div>
+
+  <div style="border:1px solid #ccc; border-radius:10px; padding:10px; margin-bottom:10px;">
+    <h3 style="font-size:16px; margin:0; color:#bc6c25;">Pickup</h3>
+    <p style="font-size:14px; margin:5px 0 0;">Pesanan bisa diambil langsung di kasir/resto.</p>
+  </div>
+
+  <div style="border:1px solid #ccc; border-radius:10px; padding:10px; margin-bottom:10px;">
+    <h3 style="font-size:16px; margin:0; color:#bc6c25;">Delivery</h3>
+    <p style="font-size:14px; margin:5px 0 0;">Pesanan akan diantar ke alamat Anda.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="small">© <strong>Dapur soeparmi</strong> 2018 — Semua hak dilindungi</div>
+    <div class="mt-2 mt-md-0">
+      <a href="https://www.instagram.com/rvaolindaa_?igsh=MTlxcXdxdm51cHR4dA==">Instagram</a>
+      <a href="https://wa.me/qr/UYO6PNQMVSEHC1" >Whatsapp</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="modalDetail" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Detail Produk</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-6"><img id="modalImg" src="" class="img-fluid rounded" alt=""></div>
+          <div class="col-md-6">
+            <h5 id="modalTitle"></h5>
+            <p id="modalDesc"></p>
+            <button class="btn btn-success">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var modal = document.getElementById('modalDetail');
+modal.addEventListener('show.bs.modal', function (event) {
+  var button = event.relatedTarget;
+  var title = button.getAttribute('data-title');
+  var img = button.getAttribute('data-img');
+  var desc = button.getAttribute('data-desc');
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalImg').src = img;
+  document.getElementById('modalDesc').textContent = desc;
+});
+
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        event.preventDefault();
+        alert('Pesan telah terkirim. Terima kasih!');
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+      form.classList.add('was-validated');
+    }, false)
+  })
+})();
+</script>
+</body>
+</html>
